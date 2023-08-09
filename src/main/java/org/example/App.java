@@ -18,13 +18,14 @@ public class App {
 
         int maxNegative = Integer.MIN_VALUE;
         int minPositive = Integer.MAX_VALUE;
-        for (int num : ar1) {
-            if (num < 0 && num > maxNegative) {
-                maxNegative = num;
-            } else if (num > 0 && num < minPositive) {
-                minPositive = num;
+
+        for (int i = 0; i < ar1.length; i++) {
+            if (ar1[i] < 0 && ar1[i] > maxNegative) {
+                maxNegative =ar1[i];
+            } else if (ar1[i] > 0 && ar1[i] < minPositive) {
+                minPositive = ar1[i];
+                 }
             }
-        }
 
         System.out.println(" ");
         System.out.println("MIN positive value of the array: " + minPositive);
